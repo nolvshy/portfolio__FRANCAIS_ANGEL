@@ -8,19 +8,25 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
 
 a {
-  color: #149ddd;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
   color: #37b3ed;
   text-decoration: none;
+}
+
+p {
+  color: #fff;
 }
 
 h1,
@@ -78,7 +84,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #1D1D1B;
   overflow-y: auto;
 }
 
@@ -86,7 +92,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 8px solid #1D1D1B;
 }
 
 #header .profile h1 {
@@ -99,16 +105,20 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#header .profile h1 a,
+#header .profile h1 a, {
+  color: white;
+  text-decoration: none;
+}
+
 #header .profile h1 a:hover {
-  color: #fff;
+  color: #ffbb00;
   text-decoration: none;
 }
 
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: #000000;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -202,7 +212,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #000000;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -228,7 +238,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../css/images/hero-bg.jpg") top center;
+  background: url("../css/images/hero-bg2.png") top center;
   background-size: cover;
 }
 
@@ -255,6 +265,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 #hero p {
@@ -266,9 +277,11 @@ h6 {
 
 #hero p span {
   color: #fff;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid 
+  #fdc81a;
 }
 
 @media (min-width: 1024px) {
@@ -299,7 +312,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #000000;
 }
 
 .section-title {
@@ -312,7 +325,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #fff;
 }
 
 .section-title h2::after {
@@ -321,7 +334,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #fff;
   bottom: 0;
   left: 0;
 }
@@ -336,7 +349,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #fff;
 }
 
 .about .content ul {
@@ -357,12 +370,16 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #fff;
   line-height: 0;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about {
+  background-color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -433,7 +450,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #ffffff;
 }
 
 .skills .progress .skill .val {
@@ -461,13 +478,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #ffffff;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #ffffff;
   position: relative;
 }
 
@@ -477,7 +494,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -511,7 +528,11 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #ffffff;
+}
+
+.resume {
+  background-color: #000000;
 }
 
 /*--------------------------------------------------------------
