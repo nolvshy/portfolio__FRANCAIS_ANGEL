@@ -8,9 +8,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=League+Spartan:wght@600&family=Urbanist&display=swap');
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto+Mono&family=Syne+Mono&display=swap');
 </style>
 
 @font-face {
@@ -39,14 +42,16 @@
 
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif:
   color: #272829;
+  
 }
 
 a {
   color: #ffffff;
   text-decoration: none;
 }
+
 
 a:hover {
   color: #37b3ed;
@@ -185,7 +190,8 @@ h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 90px 0 0 0;
+  justify-content: center;
 }
 
 .nav-menu * {
@@ -207,7 +213,8 @@ h6 {
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 23px;
+  font-weight: bold;
 }
 
 .nav-menu a i,
@@ -299,12 +306,17 @@ h1 {
 }
 
 .animdescription {
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   padding-left: 10%;
+  font-family: 'Syne Mono', monospace;
   
 }
 
+.titremenu {
+  font-family: 'Syne Mono', monospace;
+  font-size: 40px;
+}
 
 
 
@@ -445,6 +457,13 @@ section {
 
 .about {
   background-color: #000000;
+}
+
+.about .img-fluid {
+  display: block;
+  width: 370px;
+  border: 8px solid #000;
+  border-radius: 5%;
 }
 
 /*--------------------------------------------------------------
@@ -622,8 +641,11 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: rgb(0, 0, 0);
   border-radius: 50px;
+  border-style: solid; 
+  border-color: #fff;
+  border-width: 2px;
   padding: 2px 15px;
 }
 
@@ -642,7 +664,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #ffffff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -834,7 +856,7 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
+/* .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
@@ -921,12 +943,12 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #149ddd;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
+/* .contact {
   padding-bottom: 130px;
 }
 
@@ -1096,7 +1118,7 @@ section {
 
 .contact .php-email-form button[type=submit]:hover {
   background: #37b3ed;
-}
+} */
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -1177,7 +1199,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: #000000;
 }
 
 #footer .copyright {
